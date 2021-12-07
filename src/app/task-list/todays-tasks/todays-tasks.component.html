@@ -1,0 +1,13 @@
+<mat-selection-list [multiple]="false">
+  <mat-toolbar fxLayout fxLayoutAlign="center">My Tasks</mat-toolbar>
+  <div fxLayout *ngFor="let task of tasks">
+    <mat-list-option
+      [ngClass]="task.completed ? 'completed' : ''"
+      (click)="onTaskClick(task.id, task.completed)"
+    >
+      {{ task.detail }}
+    </mat-list-option>
+    <app-task-edit [selectedTask]="task"></app-task-edit>
+    <app-task-delete [selectedTask]="task"></app-task-delete>
+  </div>
+</mat-selection-list>

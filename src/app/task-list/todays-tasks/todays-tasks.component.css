@@ -1,0 +1,9 @@
+.completed {
+  text-decoration: line-through;
+}
+.overdue {
+  background-color: orange;
+}
+mat-list-option {
+  min-width: 350px;
+}

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "bullet-journal-f120c": {
+      "hosting": {
+        "bullet-journal": [
+          "bullet-journal-f120c"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "bullet-journal-f120c"
+  }
+}
